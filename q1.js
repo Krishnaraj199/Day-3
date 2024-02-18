@@ -61,10 +61,10 @@ console.log(sum2);
 
 
 // return all prime numbers in array
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const acrr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Using anonymous function
-const primes1 = arr.filter(function (num) {
+const primes1 = acrr.filter(function (num) {
   // If the number is less than 2, return false
   if (num < 2) return false;
   // Loop from 2 to the square root of the number
@@ -79,7 +79,7 @@ const primes1 = arr.filter(function (num) {
 // Using IIFE
 const primes2 = (function (arr) {
   // Return a new array with only the prime numbers
-  return arr.filter(function (num) {
+  return acrr.filter(function (num) {
     // If the number is less than 2, return false
     if (num < 2) return false;
     // Loop from 2 to the square root of the number
@@ -90,7 +90,7 @@ const primes2 = (function (arr) {
     // Otherwise, return true
     return true;
   });
-})(arr); 
+})(acrr); 
 
 console.log(primes1);
 console.log(primes2); 
